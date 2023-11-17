@@ -1,0 +1,56 @@
+<!-- Content for the Edit page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="nameTextField">Item Name</label>
+                    <input type="text" class="form-control"
+                    id="nameTextField"
+                    placeholder="Enter the Item Name"
+                    name="name" 
+                    value="<%= Grocery.Name %>"
+                    required>
+                </div>    
+
+                <div class="form-group">
+                    <label for="authorTextField">Quantity</label>
+                    <input type="text" class="form-control"
+                    id="quantityTextField"
+                    placeholder="Enter the Quantity of Item"
+                    name="quantity" 
+                    value="<%= Grocery.Quantity %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descriptionTextArea">Description</label>
+                    <textarea type="text" class="form-control"
+                    id="descriptionTextArea"
+                    placeholder="Enter the a brief description of the item"
+                    name="Description" 
+                    required>
+                    <%= Grocery.Description %>
+                    </textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="priceTextField">Price</label>
+                    <input type="text" class="form-control"
+                    id="priceTextField"
+                    placeholder="Enter the Item's Price"
+                    name="Price" 
+                    value="<%= Grocery.Price %>"
+                    required>
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+                
+                    <a href="/grocery-list" class="btn btn-warning">
+                        <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>

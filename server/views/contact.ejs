@@ -1,0 +1,38 @@
+<%-include ('partials/header')%>
+<%-include ('partials/mainnav')%>
+
+        <!--Create a class for the form and include everything in it-->
+        <div class="feedbackform"> 
+            <h2>Stay in touch!</h2> 
+            <!--Mail the entered information to the given email address and use form field-->
+            <form action="mailto:anusha.shahid@ontariotechu.net" enctype="text/plain" method="post" name="Form">
+            <p>
+                <!--Create an input box for name and the field is required-->
+                <label for="name">Name:</label>
+                <input type="text" 
+                name="name" 
+                size="30" 
+                required/>
+            </p>
+
+            <p>
+                <!--Create an input box for the email and this field is also required-->
+                <label for="email">Email:</label>
+                <input type="email" 
+                name="email" 
+                size="30" 
+                required/>
+            </p>
+            <p>
+                <!--Create an input box for comments and this box is optional-->
+                <label for="feedback">Comments (optional):</label><br>
+                <textarea name="feedback" cols="60" rows="8"></textarea>
+            </p>
+            <!--Can either reset or submit the form, won't submit without required fields-->
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+            </form>
+        </div> 
+
+<%-include ('partials/footer')%>
+<%-include ('partials/bottomnav')%>

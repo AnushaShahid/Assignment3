@@ -1,0 +1,70 @@
+/* custom css goes here */
+@charset "UTF-8";
+
+body, h1, h2, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 150vh;
+    background: linear-gradient(white, pink, rgb(168, 168, 250));
+    font-family: Georgia, sans-serif;
+}
+
+header {
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navigationbar {
+    background-color: rgb(36, 36, 36);
+}
+
+.navigationbar nav {
+    text-align: center;
+}
+
+.navigationbar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.footer {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: rgb(191, 204, 237);
+    padding: 10px 0;
+}
+
+.feedbackform {
+    font-family: 'Times New Roman', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.infoaboutme{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.selfimage{
+    align-items: center;
+}
+
+.introvideo {
+    align-items: center;
+    text-align: center;
+}
+
+.anushainfo{
+    text-align: center;
+}
